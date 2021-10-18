@@ -1,0 +1,108 @@
+html, body {
+  margin: 0px;
+}
+.layout-wrapper {
+    margin: 0px;
+    /*display: flex;*/
+    min-height: 100vh;
+    overflow: hidden;
+}
+.layout-side {
+    background-color: #2d567b;
+    float: left;
+    height: 100vh;
+    width: 64px;
+}
+
+.layout-side .el-menu{
+  background-color: #2d567b;
+}
+
+.layout-side-extend {
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+
+.layout-side-extend, .layout-side-extend .el-menu .el-submenu, .layout-side-extend .el-menu .el-menu-item {
+    width: 230px;
+    min-width: 230px;
+    background-color: #2d567b;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.layout-side-extend .el-menu .el-menu-item:hover{   /* hover事件是当鼠标放上去时触发，这里表示只有pg-header下的menu样式才有这个样式效果，且只有在鼠标放上去时*/
+  background: ghostwhite;
+}
+
+.layout-side li .el-menu.is-active, .layout-side .el-menu li .el-menu .el-menu-item.is-active, .layout-side-extend .el-menu .el-menu-item.is-active {
+  background-color: #1890ff !important;
+  color: white;
+  }
+
+.layout-side i {
+    margin-right: 10px;
+}
+.layout-logo {
+    font-weight:bold;
+    font-size: 20px;
+    color: #f8f6f6;
+    border-radius: 4px;
+    text-align: center;
+    margin: 15px 15px;
+    height: 30px;
+}
+.layout-main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100vh;
+}
+.layout-header {
+    height: 60px;
+    line-height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    border-bottom: 1px solid #e6dde9;
+}
+.layout-body {
+    background-color: #eaf0f5;
+    padding: 25px;
+    flex: 1;
+    overflow-y: scroll;
+}
+.layout-footer {
+    background-color: #eaf0f5;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 12px;
+    color: #000000;
+}
+
+.layout-header .i-button {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.pagination-bar {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+}
+
+.pagination-bar .el-pagination {
+    padding: 0;
+}
+.el-submenu__icon-arrow{
+    right: 8px !important;
+}
+
+.el-transfer-panel{
+    width: auto;
+    min-width: 250px;
+}
+.el-transfer-panel__item{
+    padding-right: 20px;
+}
